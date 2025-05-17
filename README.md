@@ -1,4 +1,4 @@
-# Brain_Tumor_Detection
+# Brain_Tumor_Classification
 ### Introduction
 
 This notebook explores the task of classifying brain tumors from MRI images. It utilizes a Convolutional Neural Network (CNN) as the primary model, employing data augmentation techniques to improve robustness and address potential data limitations. Furthermore, the performance of the CNN is compared against several traditional machine learning models (SVM, Random Forest, and XGBoost) trained on features extracted from the CNN, providing insights into the effectiveness of different approaches for this image classification problem. The following steps were taken:
@@ -15,4 +15,4 @@ Evaluates the trained CNN model using a confusion matrix, classification report,
 Extracts features from the trained CNN and uses them to train and evaluate Support Vector Machine (SVM), Random Forest, and XGBoost classifiers. The performance of these models is compared to the CNN.
 
 ### Conclusion
-The evaluation metrics for each model, including accuracy, precision, recall, F1-score, confusion matrix, and AUC-ROC, were computed and displayed. By analyzing these results, the performance of the CNN could be assessed with other traditional models (SVM, Random Forest, or XGBoost) to determine which yields the most promising results for this specific dataset and task. This presented the CNN model to have achieved a higher ability to detect brain tumor with a 98% accuracy.
+The evaluation metrics for each model, including accuracy, precision, recall, F1-score, confusion matrix, and AUC-ROC, were computed and displayed. By analyzing these results, the performance of the CNN could be assessed with other traditional models (SVM, Random Forest, or XGBoost) to determine which yields the most promising results for this specific dataset and task. This presented the CNN model to have achieved a higher ability to classify brain tumor into {'glioma': 0, 'meningioma': 1, 'notumor': 2, 'pituitary': 3} with a 98% accuracy.
